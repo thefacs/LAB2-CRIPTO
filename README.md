@@ -1,7 +1,6 @@
 # Informe Laboratorio 2 – DVWA (Damn Vulnerable Web App)
 
 **Autor:** Felipe Cuevas  
-**Sección:** x  
 **Fecha:** Septiembre 2025  
 **Correo:** felipe.cuevas1@mail.udp.cl
 
