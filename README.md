@@ -56,6 +56,7 @@ hydra_results.txt
 acceso_valido_low.txt  
 acceso_invalido_low.txt  
 script_bruteforce.py
+python_bruteforce_results.txt
 ```
 
 ---
