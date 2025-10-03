@@ -49,7 +49,7 @@ Se obtuvieron resultados en forma de credenciales válidas, análisis de tráfic
   ├─ hydracredencialn2.png
   └─ 1337.png
 
-Docker-compose.yml  
+/archivos
 usuarios.txt  
 passwords.txt  
 hydra_results.txt  
