@@ -23,7 +23,7 @@ Se obtuvieron resultados en forma de credenciales válidas, análisis de tráfic
 ## Contenido del repositorio
 
 ```
-/actividades/
+
   ├─ levantamiento.png
   ├─ redireccion.png
   ├─ consultaproxy.png
@@ -74,7 +74,7 @@ sudo docker ps
 - Contenedores: `db` (MySQL) y `dvwa` (Apache + PHP)  
 - Acceso: [http://localhost:4280](http://localhost:4280)  
 
-![Levantamiento de DVWA](actividades/levantamiento.png)
+![Levantamiento de DVWA](levantamiento.png)
 
 ---
 
@@ -91,7 +91,7 @@ sudo docker ps
 | 1337    | Charley    |
 | pablo   | letmein    |
 
-![Consulta proxy](actividades/consultaproxy.png)
+![Consulta proxy](consultaproxy.png)
 
 ---
 
@@ -112,8 +112,8 @@ Diferencias clave entre respuestas:
 - Tamaño del contenido (Content-Length)  
 - Inclusión del nombre de usuario en HTML  
 
-![Acceso válido](actividades/Lengthvalida.png)  
-![Acceso inválido](actividades/lengthinvalido.png)
+![Acceso válido](Lengthvalida.png)  
+![Acceso inválido](lengthinvalido.png)
 
 ---
 
@@ -132,7 +132,7 @@ Credenciales obtenidas:
 | gordonb  | abc123     |
 | 1337     | charley    |
 
-![Hydra credenciales](actividades/hydracredencialn1.png)
+![Hydra credenciales](hydracredencialn1.png)
 
 ---
 
